@@ -1,0 +1,45 @@
+﻿@model IEnumerable<_20F_0292_BCS_6E_Advanced_Programming_Final.Models.addBook>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of All Books in the Store</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table table-hover table-responsive">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Availability)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Author)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Availability)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Title }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Details", "Details", new { id=item.Title }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Delete", "Delete", new { id=item.Title }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>
