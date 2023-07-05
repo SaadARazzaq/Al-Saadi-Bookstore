@@ -12,6 +12,7 @@ To run this application, you need to have the following software installed:
 - Visual Studio 2019
 - Create 3 SQL Tables All of the screenshots are provided below:
 - Tables that are to be created👇
+  
   ![image](https://github.com/SaadARazzaq/Al-Saadi-Bookstore/assets/123338307/45075d64-8bfd-4223-8777-20d1a3dbc1bf)
 1) dbo.addBooks
   ![image](https://github.com/SaadARazzaq/Al-Saadi-Bookstore/assets/123338307/abb3dc4d-088b-4df4-8e47-e83caba8c247)
